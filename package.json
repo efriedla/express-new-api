@@ -1,0 +1,25 @@
+{
+  "name": "express-new-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efriedla/express-new-api.git"
+  },
+  "author": "liz friedland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/efriedla/express-new-api/issues"
+  },
+  "homepage": "https://github.com/efriedla/express-new-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "request": "^2.82.0"
+  }
+}

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>This is my Giphy Search</title>
+  </head>
+  <body>
+    <input type="text" name="q" placeholder="Search for GIFs...">
+    <button type="button">Search!</button>
+    <div id="pic">
+    	<h1 onclick ="myFunction()">omg</h1>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+
+    <script>
+    $('button').on('click', function(e) {
+      e.preventDefault();
+      var query = $('input').val();
+      $.get('/search/' + query).done(function(data) {
+        // get data returned from the get route
+        console.log(data);
+
+        // TODO: Add functionality that takes the dat
+        //  and inserts it into the page
+        //ajx
+      });
+    });
+    function myFunction() {
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwswZVnaDs2Sn9AyTVbEhdfGc3cCr3tbh_tiytTGd_cJf1d8_a");
+    x.setAttribute("width", "200");
+    x.setAttribute("height", "200");
+    x.setAttribute("alt", "La Puppy");
+    document.body.appendChild(x);
+}
+    </script>
+
+  </body>
+</html>
